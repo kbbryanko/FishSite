@@ -55,7 +55,12 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="assets/slide1.png">
+                <img class="mySlides" src="assets/slide1.png">
+                <img class="mySlides" src="assets/slide2.png">
+                <img class="mySlides" src="assets/slide3.png">
+                <img class="mySlides" src="assets/slide4.png">
+                <button class="btn display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="btn display-right" onclick="plusDivs(+1)">&#10095;</button>
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">The Story</h1>
@@ -247,6 +252,25 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
+</script>
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+    showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+    }
 </script>
 </body>
 </html>
