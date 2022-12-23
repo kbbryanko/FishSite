@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoang's Koi</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/e6903c9308.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martel:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="header">
+    <div class="waves">
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+        <div class="wave wave4"></div>
+        
+        <div class="container">
+            <nav>
+                <img src="assets/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#history">History</a></li>
+                    <li><a href="#fish">Fish</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <br>
+                <h1><span>Koi</span> 鯉<br></h1>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------------about-------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="assets/slide1.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">The Story</h1>
+                <p>I have been raising koi fish for 20 years. 
+                    They've been a large source of joy and calm for me and I hope they can bring the same to your home. 
+                    These fish are being well taken care of with the best quality food and supplies we could gather. 
+                    I have around 6 ponds with a few hundred koi fish, and a quarantine pond should the need ever arise.
+                </p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('tab1')">Fish Tip 1</p>
+                    <p class="tab-links" onclick="opentab('tab2')">Fish Tip 2</p>
+                    <p class="tab-links" onclick="opentab('tab3')">Fish Tip 3</p>
+                </div>
+                <div class="tab-contents active-tab" id="tab1">
+                    <ul>
+                        <i class="fa-solid fa-fish"></i>
+                        <h2>Water Aerator</h2>
+                        <p>Fish depend on oxygen to breathe and sustain life. 
+                            Without it, you risk your koi fish suffocating.
+                        </p>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="tab2">
+                    <ul>
+                        <i class="fa-solid fa-fish"></i>
+                        <h2>Pond Setup</h2>
+                        <p>Waters should be between 74-86 °F and the pH should be kept between 6-9.
+                            Kois need at least 250 gallons of water with a minimum depth of 6 feet.
+                        </p>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="tab3">
+                    <ul>
+                        <i class="fa-solid fa-fish"></i>
+                        <h2>Diet</h2>
+                        <p>Kois are omnivores and will eat seeds, plant material, algae, and even insects.
+                            You should keep a good stock of algae and floating weeds as well as commerical foods that are 
+                            high in protein. Three portions of pellet food per day should suffice.
+                        </p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  
+<!-- -------------------- history --------------- -->
+<div id="history">
+    <br><br><br>
+    <div class="container">
+        <h1 class="sub-title">History of Koi</h1>
+        <div class="history-list">
+            <div class="historytab1">
+                <i class="fa-solid fa-fish"></i>
+                <h2>Origin</h2>
+                <p>
+                    Koi fish or specifically named nishikigoi in Japanese are varieties of the 
+                    Amur carp that were specifically bred and kept for decorative purposes. 
+                    Carp was first bred for decorative purposes nearly a thousand years ago in China 
+                    and eventually through selective breeding and various mutations came to the numerous
+                    patterns of koi we see today. 
+                </p>
+            </div>
+            <div class="historytab2">
+                <i class="fa-solid fa-fish"></i>
+                <h2>Meaning</h2>
+                <p>
+                    The word koi is short for nishikigoi which literally means brocaded carp. 
+                    As the name suggests they have been a symbol of strength and success for a long time.
+                    However, they really have been a symbol of most positive meanings such as good luck, 
+                    prosperity, vitality, and longevity. Additionally, the word koi in Japanese means love.
+                </p>
+            </div>
+            <div class="historytab3">
+                <i class="fa-solid fa-fish"></i>
+                <h2>Types</h2>
+                <p>
+                    The three most common types are Kohaku, Taisho Sanke, and Showa. Kohaku has a white body with red 
+                    splotches as the pattern. Taisho Sanke was developed from the Kohaku which just like the Kohaku
+                    has a white body with red splotches but additionally smaller black splotches. The Showa is 
+                    similar to the Taisho Sanke except the black splotches are similar in size to the red splotches.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------------ phish ------------------- -->
+<div id="fish">
+    <br><br><br>
+    <div class="container">
+        <h1 class="sub-title">Our Fish</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="assets/phishwater.png">
+                <div class="layer">
+                    <h3>Phishy</h3>
+                    <p>phish phish phish phish phish phish phish phish</p>
+                    <a><i class="fa-solid fa-fish"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="assets/phishwater.png">
+                <div class="layer">
+                    <h3>Phishy</h3>
+                    <p>phish phish phish phish phish phish phish phish</p>
+                    <a><i class="fa-solid fa-fish"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="assets/phishwater.png">
+                <div class="layer">
+                    <h3>Phishy</h3>
+                    <p>phish phish phish phish phish phish phish phish</p>
+                    <a><i class="fa-solid fa-fish"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------------------contact---------------- -->
+<div id="contact">
+    <br><br><br><br>
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>hoangleim@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>(817) 897-4478 </p>
+                <div class="social-icons">
+                  
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">    
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Bryan Ko</p>
+    </div>
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyfBM9Wd9hpBQRQvKXPajan-17AnxD6mV0pHq05XTr2iYN7FCTRqVFRhQwPBY1GgzL6/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>
