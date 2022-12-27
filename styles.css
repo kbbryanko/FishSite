@@ -296,6 +296,7 @@ nav ul li a:hover::after{
     position: relative; 
     height: 75vh;
     width: 100%;
+    border: solid #443c54;
 }
 .historytab1::before{
     content: "";
@@ -306,13 +307,14 @@ nav ul li a:hover::after{
     right: 0px;
     bottom: 0px;
     left: 0px;
-    filter: brightness(50%);
+    filter: brightness(60%) blur(4px);  
     border-radius: 10px;
 }
 .history-list .historytab2{
     position: relative; 
     height: 75vh;
     width: 100%;
+    border: solid #443c54;
 }
 .historytab2::before{
     content: "";
@@ -323,13 +325,14 @@ nav ul li a:hover::after{
     right: 0px;
     bottom: 0px;
     left: 0px;
-    filter: brightness(50%);
+    filter: brightness(60%) blur(4px);
     border-radius: 10px;
 }
 .history-list .historytab3{
     position: relative; 
     height: 75vh;
     width: 100%;
+    border: solid #443c54;  
 }
 .historytab3::before{
     content: "";
@@ -340,7 +343,7 @@ nav ul li a:hover::after{
     right: 0px;
     bottom: 0px;
     left: 0px;
-    filter: brightness(50%);
+    filter: brightness(60%) blur(4px);
     border-radius: 10px;
 }
 /* --------------- fish -------------- */
@@ -570,7 +573,7 @@ nav .fa-solid{
         flex-basis: 100%;
     }
     .slidebtn{
-        margin: 6px 10px;
+        margin: 6px 16px;
     }
     .copyright{
         font-size: 14px;
