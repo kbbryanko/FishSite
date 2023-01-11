@@ -110,12 +110,12 @@ nav{
     /* transform: scaleX(-1); */
 }
 
-.logo{
+/* .logo{
     width: 140px;
     border-radius: 70px;
     border-style: solid;
     border-color: #443c54;
-}
+} */
 
 nav ul li{
     display: inline-block;
@@ -505,12 +505,12 @@ nav .fa-solid{
     .header .fa-solid{
         color: #443c54;
     }
-    .logo{
+    /* .logo{
         width: 70px;
         border-radius: 70px;
         border-style: solid;
         border-color: #443c54;
-    }
+    } */
     .waves{
         background: url(assets/background.png);
     }
